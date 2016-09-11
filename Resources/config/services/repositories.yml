@@ -1,0 +1,10 @@
+services:
+    vsymfo_user.repository.user:
+         class: vSymfo\Bundle\UserBundle\Repository\UserRepository
+         factory: ["@doctrine", getRepository]
+         arguments: [vSymfo\Bundle\UserBundle\Entity\User]
+
+    vsymfo_user.repository.group:
+         class: vSymfo\Bundle\UserBundle\Repository\GroupRepository
+         factory: ["@doctrine", getRepository]
+         arguments: [vSymfo\Bundle\UserBundle\Entity\Group]

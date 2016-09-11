@@ -1,0 +1,23 @@
+{
+    "name": "mikoweb/vsymfo-user-bundle",
+    "type": "symfony-bundle",
+    "description": "vSymfo User Bundle",
+    "license": "LGPLv3",
+    "authors": [
+        {
+            "name": "Rafał Mikołajun",
+            "email": "rafal@mikoweb.pl",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "mikoweb/vsymfo-fos-user-bundle": "~0.0.1",
+        "mikoweb/vsymfo-panel-bundle": "~0.0.1"
+    },
+    "autoload": {
+        "psr-4": { "vSymfo\\Bundle\\UserBundle\\": "" }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

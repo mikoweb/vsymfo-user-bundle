@@ -1,0 +1,20 @@
+services:
+    vsymfo_user.form.type.user:
+         class: vSymfo\Bundle\UserBundle\Form\Type\UserFormType
+         tags:
+            - { name: form.type }
+
+    vsymfo_user.form.type.user_list_filter:
+         class: vSymfo\Bundle\UserBundle\Form\Type\UserListFilterFormType
+         tags:
+            - { name: form.type }
+
+    vsymfo_user.form.type.group:
+         class: vSymfo\Bundle\UserBundle\Form\Type\GroupFormType
+         tags:
+            - { name: form.type }
+
+    vsymfo_user.form.type.group_type:
+         class: vSymfo\Bundle\UserBundle\Form\Type\GroupTypeFormType
+         tags:
+            - { name: form.type }

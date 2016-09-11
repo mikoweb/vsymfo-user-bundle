@@ -1,0 +1,72 @@
+roles:
+    names:
+        role_list_user: Access to users list
+        role_new_user: Create new user
+        role_edit_user: Edit user
+        role_lock_user: Lock user
+        role_unlock_user: Unlock user
+        role_list_group: Access to groups list
+        role_new_group: Create new group
+        role_edit_group: Edit group
+        role_remove_group: Remove group
+    tags:
+        user: Users
+        group: Groups
+
+groups:
+    names:
+        admin: Administrator
+        user: User
+    types:
+        user: Users
+        employee: Employees
+    fields:
+        id: Id
+        name: Name
+        type: Type
+        roles: Roles
+        group_role: Main role
+        users: Users
+    list:
+        title: Groups
+    messages:
+        store_success: Group has been created.
+        update_success: Group has been saved.
+        destroy_success: Group has been removed.
+        error_group_has_users: You can not delete a group that has users!
+    form:
+        title_new: New group
+        title_edit: Edit group
+        title_remove: Remove group
+    remove_confirmation: Are you sure you want to remove the group "%group_name%"?
+
+users:
+    fields:
+        id: Id
+        name: Name
+        email: Email
+        groups: Groups
+        fullname: Full name
+        firstname: First name
+        lastname: Last name
+    list:
+        title: Users
+        title_eployee: Employees
+    messages:
+        store_success: User has been created.
+        update_success: User has been saved.
+        lock_successful: User has been locked.
+        unlock_successful: User has been unlocked.
+    form:
+        title_new: New user
+        title_edit: Edit user
+    form_filter:
+        name: Name
+        type: Type
+        choice_type: Any type
+        name_placeholder: name or email
+        choice_group: All groups
+        group: Group
+        locked_users: Blocked
+        active_users: Activated
+        all_users: All

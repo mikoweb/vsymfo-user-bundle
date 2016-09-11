@@ -1,0 +1,10 @@
+routes:
+    panel_user_root: Users
+    panel_user_index: List
+    panel_user_create: New user
+    panel_user_edit: Edit user
+    panel_group_root: Groups
+    panel_group_index: List
+    panel_group_create: New group
+    panel_group_edit: Edit group
+    panel_group_destroy: Remove group

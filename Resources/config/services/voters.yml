@@ -1,0 +1,17 @@
+services:
+    vsymfo_user.security.group_voter:
+        class: vSymfo\Bundle\UserBundle\Security\Authorization\Voter\GroupVoter
+        arguments: ["@vsymfo_user.repository.group"]
+        public: false
+        calls:
+            - [setContainer, ["@service_container"]]
+        tags:
+            - { name: security.voter }
+
+    vsymfo_user.security.user_voter:
+        class: vSymfo\Bundle\UserBundle\Security\Authorization\Voter\UserVoter
+        public: false
+        calls:
+            - [setContainer, ["@service_container"]]
+        tags:
+            - { name: security.voter }

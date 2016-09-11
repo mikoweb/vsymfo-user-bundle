@@ -1,0 +1,9 @@
+vsymfo_user_user:
+    resource: "@vSymfoUserBundle/Resources/config/routing/user.yml"
+    prefix:   /user
+    type:     crud
+
+vsymfo_user_group:
+    resource: "@vSymfoUserBundle/Resources/config/routing/group.yml"
+    prefix:   /group
+    type:     crud

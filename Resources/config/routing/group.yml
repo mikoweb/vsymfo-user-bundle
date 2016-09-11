@@ -1,0 +1,7 @@
+crud:
+    path:                  /
+    options:
+        route_prefix:      "%vsymfo_user.group_controller.route_prefix%"
+        controller:        vSymfoUserBundle:Group
+        except:            [show]
+        index_pagination:  true

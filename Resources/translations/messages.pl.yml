@@ -1,0 +1,72 @@
+roles:
+    names:
+        role_list_user: Dostęp do listy użytkowników
+        role_new_user: Tworzenie nowego użytkownika
+        role_edit_user: Edycja użytkownika
+        role_lock_user: Blokowanie użytkownika
+        role_unlock_user: Odblokowywanie użytkownika
+        role_list_group: Dostęp do listy grup
+        role_new_group: Tworzenie nowej grupy
+        role_edit_group: Edycja grupy
+        role_remove_group: Usuwanie grupy
+    tags:
+        user: Użytkownicy
+        group: Grupy
+
+groups:
+    names:
+        admin: Administrator
+        user: Użytkownik
+    types:
+        user: Użytkownicy
+        employee: Pracownicy
+    fields:
+        id: Id
+        name: Nazwa
+        type: Typ
+        roles: Role
+        group_role: Rola główna
+        users: Użytkownicy
+    list:
+        title: Grupy
+    messages:
+        store_success: Grupa została utworzona.
+        update_success: Grupa została zapisana.
+        destroy_success: Grupa została usunięta.
+        error_group_has_users: Nie można usunąć grupy, która posiada użytkowników!
+    form:
+        title_new: Nowa grupa
+        title_edit: Edycja grupy
+        title_remove: Usuwanie grupy
+    remove_confirmation: Czy jesteś pewien, że chcesz usunąć grupę "%group_name%"?
+
+users:
+    fields:
+        id: Id
+        name: Nazwa
+        email: E-mail
+        groups: Grupy
+        fullname: Pełna nazwa
+        firstname: Imię
+        lastname: Nazwisko
+    list:
+        title: Użytkownicy
+        title_eployee: Pracownicy
+    messages:
+        store_success: Użytkownik został utworzony.
+        update_success: Użytkownik został zapisany.
+        lock_successful: Użytkownik został zablokowany.
+        unlock_successful: Użytkownik został odblokowany.
+    form:
+        title_new: Nowy użytkownik
+        title_edit: Edycja użytkownika
+    form_filter:
+        name: Nazwa
+        type: Typ
+        choice_type: Dowolny typ
+        name_placeholder: nazwa lub e-email
+        choice_group: Wszystkie grupy
+        group: Grupa
+        locked_users: Zablokowani
+        active_users: Aktywowani
+        all_users: Wszyscy

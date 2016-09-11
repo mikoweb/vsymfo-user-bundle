@@ -1,0 +1,19 @@
+services:
+    vsymfo_user.manager.user:
+        class: vSymfo\Bundle\UserBundle\Manager\UserManager
+        arguments:
+            - "@doctrine.orm.default_entity_manager"
+            - "@form.factory"
+            - "@vsymfo_core.entity_factory"
+            - "@vsymfo_user.repository.user"
+            - "@knp_paginator"
+            - "@fos_user.user_manager"
+
+    vsymfo_user.manager.group:
+        class: vSymfo\Bundle\UserBundle\Manager\GroupManager
+        arguments:
+            - "@doctrine.orm.default_entity_manager"
+            - "@form.factory"
+            - "@vsymfo_core.entity_factory"
+            - "@vsymfo_user.repository.group"
+            - "@knp_paginator"
