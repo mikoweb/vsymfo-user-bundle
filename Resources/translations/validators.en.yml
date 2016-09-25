@@ -1,0 +1,14 @@
+user:
+    unique_username: Username must be unique.
+    unique_email: This email address was used by another user.
+    groups_not_blank: You must select at least one group.
+
+role:
+    unique_name: The name must be unique.
+    unique_role: Role name must be unique.
+
+group:
+    unique_name: Group name must be unique.
+    name_not_blank: Group name can not be empty.
+    type_not_blank: Type of user is required.
+    group_role_not_blank: Main role is required.

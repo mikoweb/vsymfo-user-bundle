@@ -1,0 +1,14 @@
+user:
+    unique_username: Nazwa użytkownika musi być unikalna.
+    unique_email: Ten adres e-mail został użyty przez innego użytkownika.
+    groups_not_blank: Musisz wybrać co najmniej jedną grupę.
+
+role:
+    unique_name: Nazwa musi być unikalna.
+    unique_role: Rola musi być unikalna.
+
+group:
+    unique_name: Nazwa grupy musi być unikalna.
+    name_not_blank: Nazwa grupy nie może być pusta.
+    type_not_blank: Musisz wybrać typ użytkownika.
+    group_role_not_blank: Główna rola jest wymagana.
