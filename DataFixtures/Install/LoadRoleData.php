@@ -38,9 +38,9 @@ class LoadRoleData extends AbstractRoleFixture implements OrderedFixtureInterfac
     /**
      * {@inheritdoc}
      */
-    public function createRoleEntity()
+    public function getRoleClass()
     {
-        return new Role();
+        return Role::class;
     }
 
     /**
