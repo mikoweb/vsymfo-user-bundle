@@ -102,7 +102,9 @@ class GroupController extends Controller implements WritableInterface, Removable
     {
         $group = $this->getManager()->findEntity($request);
         $this->denyAccessUnlessGranted('group_remove_is_no_users_access', $group);
-        $data = $this->crudFactory()->create($this)->destroy($request);
+        $data = $this->crudFactory()->create($this)->destroy($request, [
+            'entity' => $group
+        ]);
 
         if ($redirect = $data->getResponse()) {
             return $redirect;
