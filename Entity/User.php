@@ -108,6 +108,19 @@ class User extends BaseUser implements
     protected $plainPassword;
 
     /**
+     * @var bool
+     *
+     * @ORM\Column(name="is_locked", type="boolean", options={"default": 0})
+     */
+    protected $locked;
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->locked = false;
+    }
+
+    /**
      * @return string
      */
     public function getFirstName()
@@ -161,5 +174,21 @@ class User extends BaseUser implements
         }
 
         return trim($this->lastName . ' ' . $this->firstName);
+    }
+
+    /**
+     * @return boolean
+     */
+    public function isLocked()
+    {
+        return $this->locked;
+    }
+
+    /**
+     * @param boolean $locked
+     */
+    public function setLocked($locked)
+    {
+        $this->locked = $locked;
     }
 }
