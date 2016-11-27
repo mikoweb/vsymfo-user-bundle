@@ -191,4 +191,12 @@ class User extends BaseUser implements
     {
         $this->locked = $locked;
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function isAccountNonLocked()
+    {
+        return !$this->isLocked();
+    }
 }
